@@ -6,6 +6,12 @@
 Liquibase Secure (formerly Liquibase Pro) is database change management made easy. This repository contains sample changelogs organized by object type and release.
 
 # 📖 Overview
+This repository provides two pre-packaged Liquibase changelog archives for your database deployment needs.
+
+* Object Type Organization - Changelogs grouped by database object type (tables, views, stored procedures, etc.)
+
+* Release Version Organization - Changelogs grouped by release version for sequential deployment tracking
+
 The initial changesets were built using the [Adventure Works 2019](https://learn.microsoft.com/en-us/sql/samples/adventureworks-install-configure?view=sql-server-ver16&tabs=ssms) database provided by Microsoft for SQL Server. While the structure of the files is correct the changelogs will not run as-is due to missing dependencies (only a few object examples are included).
 
 Best practices for changelog management can be found [here](https://docs.liquibase.com/secure/implementation-guide-5-0).
@@ -19,7 +25,7 @@ changelog.type.xml
 │       Sales.Customer.sql
 ├───Views
 │       HumanResources.EmployeeDepartmentHistory.sql
-│       Purchashing.VendorWithAddress.sql
+│       Purchasing.VendorWithAddress.sql
 │       Sales.StoreWithContacts.sql
 ├───Stored Procedures
 │       HumanResources.UpdateEmployeeLogin.sql
@@ -35,6 +41,11 @@ changelog.version.xml
 ├───Version 1.1
 │       version1_1.sql
 ```
+
+# 🤔 Which Archive Should I Use?
+* Object Type - Best for development teams who prefer to work with similar objects together or need to deploy specific object types independently
+
+* Release Version - Best for production deployments where you need clear version tracking and sequential release management
 
 # ☎️ Contact Liquibase
 Liquibase sales: https://www.liquibase.com/contact-us<br>
