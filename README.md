@@ -47,7 +47,7 @@ changelog.version.xml
 
 * **Release Version** - Best for organizing changes by when they'll be deployed. Useful for tracking what goes out together in each release and maintaining clear deployment history.
 
-**Note:** Either is valid; choose which makes sense for your workflows.
+**Note!** Either is valid; choose the best fit for your workflows.
 
 # ☎️ Contact Liquibase
 Liquibase sales: https://www.liquibase.com/contact-us<br>
