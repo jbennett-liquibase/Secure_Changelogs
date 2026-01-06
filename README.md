@@ -42,10 +42,12 @@ changelog.version.xml
 │       version1_1.sql
 ```
 
-# 🤔 Which Archive Should I Use?
-* Object Type - Best for development teams who prefer to work with similar objects together or need to deploy specific object types independently
+# 🤔 Which Should I Use?
+* **Object Type** - Best for organizing changes by database structure (tables, views, stored procedures, etc.). Useful when different team members own different object types or when you want to find all changes to a specific type of object quickly.
 
-* Release Version - Best for production deployments where you need clear version tracking and sequential release management
+* **Release Version** - Best for organizing changes by when they'll be deployed. Useful for tracking what goes out together in each release and maintaining clear deployment history.
+
+**Note:** Either is valid; choose which makes sense for your workflows.
 
 # ☎️ Contact Liquibase
 Liquibase sales: https://www.liquibase.com/contact-us<br>
